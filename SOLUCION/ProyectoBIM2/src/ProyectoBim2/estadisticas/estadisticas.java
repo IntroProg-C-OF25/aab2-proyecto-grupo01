@@ -18,22 +18,23 @@ public class estadisticas {
             System.out.printf(" %2d | %18d | %16d \n", (i + 1), asistenciaPorDia[i][0], asistenciaPorDia[i][1]);
         }
 
-        int totalSemana1General = 0, totalSemana1Especial = 0;
-        int totalSemana2General = 0, totalSemana2Especial = 0;
+        int[][] resumenSemanal = new int[2][2]; // [Semana][General, Especial]
 
         for (int i = 0; i < 5; i++) { // Días 1-5
-            totalSemana1General += asistenciaPorDia[i][0];
-            totalSemana1Especial += asistenciaPorDia[i][1];
+            resumenSemanal[0][0] += asistenciaPorDia[i][0]; // General
+            resumenSemanal[0][1] += asistenciaPorDia[i][1]; // Especial
         }
         for (int i = 5; i < 10; i++) { // Días 6-10
-            totalSemana2General += asistenciaPorDia[i][0];
-            totalSemana2Especial += asistenciaPorDia[i][1];
+            resumenSemanal[1][0] += asistenciaPorDia[i][0]; // General
+            resumenSemanal[1][1] += asistenciaPorDia[i][1]; // Especial
         }
 
-        int totalSemana1 = totalSemana1General + totalSemana1Especial;
-        int totalSemana2 = totalSemana2General + totalSemana2Especial;
-
-        System.out.println("📌 Asistencia primera semana: " + totalSemana1 + " (General: " + totalSemana1General + ", Especial: " + totalSemana1Especial + ")");
-        System.out.println("📌 Asistencia segunda semana: " + totalSemana2 + " (General: " + totalSemana2General + ", Especial: " + totalSemana2Especial + ")");
+        System.out.println("\n📊 Resumen de Asistencia por Semana:");
+        System.out.println("Semana | Asistencia General | Asistencia Especial | Total");
+        System.out.println("--------------------------------------------------------");
+        for (int i = 0; i < 2; i++) {
+            int totalSemana = resumenSemanal[i][0] + resumenSemanal[i][1];
+            System.out.printf("   %d   | %18d | %19d | %5d\n", (i + 1), resumenSemanal[i][0], resumenSemanal[i][1], totalSemana);
+        }
     }
 }
