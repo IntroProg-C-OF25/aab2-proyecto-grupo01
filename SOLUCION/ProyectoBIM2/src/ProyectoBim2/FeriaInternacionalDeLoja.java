@@ -1,4 +1,5 @@
 package ProyectoBim2;
+
 import ProyectoBim2.entradas.entradas;
 import ProyectoBim2.estadisticas.estadisticas;
 import ProyectoBim2.asistencias.asistencias;
@@ -6,6 +7,7 @@ import ProyectoBim2.asistencias.asistencias;
 import java.util.Scanner;
 
 public class FeriaInternacionalDeLoja {
+
     public static void main(String[] args) {
         Scanner tcl = new Scanner(System.in);
         int totalEntradasNormales = 0;
@@ -36,13 +38,16 @@ public class FeriaInternacionalDeLoja {
                     totalGanancias += resultado[0];
                     totalEntradasEspeciales += resultado[1];
                 }
-                case 3 -> mostrarEstadisticas(totalEntradasNormales, totalEntradasEspeciales, totalGanancias, asistenciaPorDia);
-                case 4 -> registrarAsistencia(tcl, asistenciaPorDia);
+                case 3 ->
+                    mostrarEstadisticas(totalEntradasNormales, totalEntradasEspeciales, totalGanancias, asistenciaPorDia);
+                case 4 ->
+                    registrarAsistencia(tcl, asistenciaPorDia);
                 case 5 -> {
                     System.out.println("\n👋 Gracias por usar el sistema. ¡Hasta la próxima!");
                     break OUTER;
                 }
-                default -> System.out.println("⚠ Opción no válida, intente nuevamente.");
+                default ->
+                    System.out.println("⚠ Opción no válida, intente nuevamente.");
             }
         }
     }
@@ -83,55 +88,57 @@ public class FeriaInternacionalDeLoja {
         System.out.println(" 📊 Estadísticas de la Feria 🎡 ");
         System.out.println("========================================");
         System.out.println("👥 Total de visitantes: " + totalVisitantes);
-        System.out.println("🎟 Entradas normales vendidas: " + normales);
+        System.out.println("🎟️ Entradas normales vendidas: " + normales);
         System.out.println("🎭 Entradas especiales vendidas: " + especiales);
         System.out.println("💰 Ganancias totales: $" + ganancias);
 
-        System.out.println("\n📅 Asistencia por día:");
-        System.out.println("Día |	Generales |	Especiales");
-        System.out.println("-----------------------------");
+        System.out.println("📅 Asistencia por día:");
+        System.out.println("Día | Asistencia General | Función Especial");
+        System.out.println("-------------------------------------------");
         for (int i = 0; i < asistenciaPorDia.length; i++) {
-            System.out.println((i + 1) + "\t" + asistenciaPorDia[i][0] + "\t\t" + asistenciaPorDia[i][1]);
+            System.out.printf(" %2d | %18d | %16d \n", (i + 1), asistenciaPorDia[i][0], asistenciaPorDia[i][1]);
         }
 
-        int totalGeneralesSemana1 = 0;
-        int totalEspecialesSemana1 = 0;
-        int totalGeneralesSemana2 = 0;
-        int totalEspecialesSemana2 = 0;
+        int[][] resumenSemanal = new int[2][2]; // [Semana][General, Especial]
 
-        for (int i = 0; i < 5; i++) {
-            totalGeneralesSemana1 += asistenciaPorDia[i][0];
-            totalEspecialesSemana1 += asistenciaPorDia[i][1];
+        for (int i = 0; i < 5; i++) { // Días 1-5
+            resumenSemanal[0][0] += asistenciaPorDia[i][0]; // General
+            resumenSemanal[0][1] += asistenciaPorDia[i][1]; // Especial
+        }
+        for (int i = 5; i < 10; i++) { // Días 6-10
+            resumenSemanal[1][0] += asistenciaPorDia[i][0]; // General
+            resumenSemanal[1][1] += asistenciaPorDia[i][1]; // Especial
         }
 
-        for (int i = 5; i < 10; i++) {
-            totalGeneralesSemana2 += asistenciaPorDia[i][0];
-            totalEspecialesSemana2 += asistenciaPorDia[i][1];
+        System.out.println("\n📊 Resumen de Asistencia por Semana:");
+        System.out.println("Semana | Asistencia General | Asistencia Especial | Total");
+        System.out.println("--------------------------------------------------------");
+        for (int i = 0; i < 2; i++) {
+            int totalSemana = resumenSemanal[i][0] + resumenSemanal[i][1];
+            System.out.printf("   %d   | %18d | %19d | %5d\n", (i + 1), resumenSemanal[i][0], resumenSemanal[i][1], totalSemana);
         }
-
-        System.out.println("\n🗓 Asistencia semanal:");
-        System.out.println("Semana 1:");
-        System.out.println("Generales | Especiales");
-        System.out.println(totalGeneralesSemana1 + "\t\t" + totalEspecialesSemana1);
-
-        System.out.println("Semana 2:");
-        System.out.println("Generales | Especiales");
-        System.out.println(totalGeneralesSemana2 + "\t\t" + totalEspecialesSemana2);
     }
 
     public static void registrarAsistencia(Scanner tcl, int[][] asistenciaPorDia) {
+        System.out.println("\n========================================");
+        System.out.println(" 📝 Registro de Asistencia ");
+        System.out.println("========================================");
         System.out.print("Ingrese el número de día de la feria (1-10): ");
         int dia = tcl.nextInt();
         if (dia < 1 || dia > 10) {
-            System.out.println("⚠ Día inválido, intente nuevamente.");
+            System.out.println("⚠️ Día inválido, intente nuevamente.");
             return;
         }
+
         System.out.print("👥 Ingrese la cantidad de asistentes generales: ");
         int cantidad = tcl.nextInt();
+
         System.out.print("🎭 Ingrese la asistencia a la función especial (2pm - 5pm): ");
         int funcionAsistencia = tcl.nextInt();
+
         asistenciaPorDia[dia - 1][0] += cantidad;
         asistenciaPorDia[dia - 1][1] += funcionAsistencia;
+
         System.out.println("✅ Asistencia registrada correctamente.");
     }
 }
