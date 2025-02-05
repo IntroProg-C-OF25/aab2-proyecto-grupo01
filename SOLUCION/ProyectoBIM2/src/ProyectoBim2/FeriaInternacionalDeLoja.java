@@ -145,6 +145,8 @@ public class FeriaInternacionalDeLoja {
 
 /***
  *
+ *run:
+
 ========================================
    🎡 Sistema de Gestión de Entradas 🎟 
 ========================================
@@ -154,8 +156,8 @@ public class FeriaInternacionalDeLoja {
 4. Registrar asistencias 📝
 5. Salir 🚪
 Seleccione una opción: 1
-¿Cuántas entradas desea comprar?🤔: 1
-✅ Entradas normales compradas por $5
+¿Cuántas entradas desea comprar?🤔: 3
+✅ Entradas normales compradas por $15
 
 ========================================
    🎡 Sistema de Gestión de Entradas 🎟 
@@ -166,9 +168,9 @@ Seleccione una opción: 1
 4. Registrar asistencias 📝
 5. Salir 🚪
 Seleccione una opción: 2
-¿Cuántas entradas desea comprar?🤔: 1
+¿Cuántas entradas desea comprar?🤔: 3
 Ingrese el día de la semana (jueves, viernes, sábado): jueves
-🎟 Entradas especiales compradas por $8
+🎟 Entradas especiales compradas por $24
 
 ========================================
    🎡 Sistema de Gestión de Entradas 🎟 
@@ -179,9 +181,13 @@ Ingrese el día de la semana (jueves, viernes, sábado): jueves
 4. Registrar asistencias 📝
 5. Salir 🚪
 Seleccione una opción: 4
+
+========================================
+ 📝 Registro de Asistencia 
+========================================
 Ingrese el número de día de la feria (1-10): 1
-👥 Ingrese la cantidad de asistentes generales: 11
-🎭 Ingrese la asistencia a la función especial (2pm - 5pm): 1
+👥 Ingrese la cantidad de asistentes generales: 2
+🎭 Ingrese la asistencia a la función especial (2pm - 5pm): 3
 ✅ Asistencia registrada correctamente.
 
 ========================================
@@ -197,32 +203,207 @@ Seleccione una opción: 3
 ========================================
  📊 Estadísticas de la Feria 🎡 
 ========================================
-👥 Total de visitantes: 2
-🎟 Entradas normales vendidas: 1
-🎭 Entradas especiales vendidas: 1
-💰 Ganancias totales: $13
-
+👥 Total de visitantes: 6
+🎟️ Entradas normales vendidas: 3
+🎭 Entradas especiales vendidas: 3
+💰 Ganancias totales: $39
 📅 Asistencia por día:
-Día |	Generales |	Especiales
------------------------------
-1	11		1
-2	0		0
-3	0		0
-4	0		0
-5	0		0
-6	0		0
-7	0		0
-8	0		0
-9	0		0
-10	0		0
+Día | Asistencia General | Función Especial
+-------------------------------------------
+  1 |                  2 |                3 
+  2 |                  0 |                0 
+  3 |                  0 |                0 
+  4 |                  0 |                0 
+  5 |                  0 |                0 
+  6 |                  0 |                0 
+  7 |                  0 |                0 
+  8 |                  0 |                0 
+  9 |                  0 |                0 
+ 10 |                  0 |                0 
 
-🗓 Asistencia semanal:
-Semana 1:
-Generales | Especiales
-11		1
-Semana 2:
-Generales | Especiales
-0		0
+📊 Resumen de Asistencia por Semana:
+Semana | Asistencia General | Asistencia Especial | Total
+--------------------------------------------------------
+   1   |                  2 |                   3 |     5
+   2   |                  0 |                   0 |     0
+
+========================================
+   🎡 Sistema de Gestión de Entradas 🎟 
+========================================
+1. Comprar entrada normal 🎟
+2. Comprar entrada especial 🎫
+3. Ver estadísticas 📊
+4. Registrar asistencias 📝
+5. Salir 🚪
+Seleccione una opción: 1
+¿Cuántas entradas desea comprar?🤔: 20
+✅ Entradas normales compradas por $100
+
+========================================
+   🎡 Sistema de Gestión de Entradas 🎟 
+========================================
+1. Comprar entrada normal 🎟
+2. Comprar entrada especial 🎫
+3. Ver estadísticas 📊
+4. Registrar asistencias 📝
+5. Salir 🚪
+Seleccione una opción: 2
+¿Cuántas entradas desea comprar?🤔: 10
+Ingrese el día de la semana (jueves, viernes, sábado): jueves
+🎟 Entradas especiales compradas por $80
+
+========================================
+   🎡 Sistema de Gestión de Entradas 🎟 
+========================================
+1. Comprar entrada normal 🎟
+2. Comprar entrada especial 🎫
+3. Ver estadísticas 📊
+4. Registrar asistencias 📝
+5. Salir 🚪
+Seleccione una opción: 4
+
+========================================
+ 📝 Registro de Asistencia 
+========================================
+Ingrese el número de día de la feria (1-10): 2
+👥 Ingrese la cantidad de asistentes generales: 20
+🎭 Ingrese la asistencia a la función especial (2pm - 5pm): 10
+✅ Asistencia registrada correctamente.
+
+========================================
+   🎡 Sistema de Gestión de Entradas 🎟 
+========================================
+1. Comprar entrada normal 🎟
+2. Comprar entrada especial 🎫
+3. Ver estadísticas 📊
+4. Registrar asistencias 📝
+5. Salir 🚪
+Seleccione una opción: 3
+
+========================================
+ 📊 Estadísticas de la Feria 🎡 
+========================================
+👥 Total de visitantes: 36
+🎟️ Entradas normales vendidas: 23
+🎭 Entradas especiales vendidas: 13
+💰 Ganancias totales: $219
+📅 Asistencia por día:
+Día | Asistencia General | Función Especial
+-------------------------------------------
+  1 |                  2 |                3 
+  2 |                 20 |               10 
+  3 |                  0 |                0 
+  4 |                  0 |                0 
+  5 |                  0 |                0 
+  6 |                  0 |                0 
+  7 |                  0 |                0 
+  8 |                  0 |                0 
+  9 |                  0 |                0 
+ 10 |                  0 |                0 
+
+📊 Resumen de Asistencia por Semana:
+Semana | Asistencia General | Asistencia Especial | Total
+--------------------------------------------------------
+   1   |                 22 |                  13 |    35
+   2   |                  0 |                   0 |     0
+
+========================================
+   🎡 Sistema de Gestión de Entradas 🎟 
+========================================
+1. Comprar entrada normal 🎟
+2. Comprar entrada especial 🎫
+3. Ver estadísticas 📊
+4. Registrar asistencias 📝
+5. Salir 🚪
+Seleccione una opción: 1
+¿Cuántas entradas desea comprar?🤔: 10
+✅ Entradas normales compradas por $50
+
+========================================
+   🎡 Sistema de Gestión de Entradas 🎟 
+========================================
+1. Comprar entrada normal 🎟
+2. Comprar entrada especial 🎫
+3. Ver estadísticas 📊
+4. Registrar asistencias 📝
+5. Salir 🚪
+Seleccione una opción: 2
+¿Cuántas entradas desea comprar?🤔: 5
+Ingrese el día de la semana (jueves, viernes, sábado): viernes
+🎟 Entradas especiales compradas por $60
+
+========================================
+   🎡 Sistema de Gestión de Entradas 🎟 
+========================================
+1. Comprar entrada normal 🎟
+2. Comprar entrada especial 🎫
+3. Ver estadísticas 📊
+4. Registrar asistencias 📝
+5. Salir 🚪
+Seleccione una opción: 4
+
+========================================
+ 📝 Registro de Asistencia 
+========================================
+Ingrese el número de día de la feria (1-10): 3
+👥 Ingrese la cantidad de asistentes generales: 5
+🎭 Ingrese la asistencia a la función especial (2pm - 5pm): 2
+✅ Asistencia registrada correctamente.
+
+========================================
+   🎡 Sistema de Gestión de Entradas 🎟 
+========================================
+1. Comprar entrada normal 🎟
+2. Comprar entrada especial 🎫
+3. Ver estadísticas 📊
+4. Registrar asistencias 📝
+5. Salir 🚪
+Seleccione una opción: 4
+
+========================================
+ 📝 Registro de Asistencia 
+========================================
+Ingrese el número de día de la feria (1-10): 4
+👥 Ingrese la cantidad de asistentes generales: 5
+🎭 Ingrese la asistencia a la función especial (2pm - 5pm): 3
+✅ Asistencia registrada correctamente.
+
+========================================
+   🎡 Sistema de Gestión de Entradas 🎟 
+========================================
+1. Comprar entrada normal 🎟
+2. Comprar entrada especial 🎫
+3. Ver estadísticas 📊
+4. Registrar asistencias 📝
+5. Salir 🚪
+Seleccione una opción: 3
+
+========================================
+ 📊 Estadísticas de la Feria 🎡 
+========================================
+👥 Total de visitantes: 51
+🎟️ Entradas normales vendidas: 33
+🎭 Entradas especiales vendidas: 18
+💰 Ganancias totales: $329
+📅 Asistencia por día:
+Día | Asistencia General | Función Especial
+-------------------------------------------
+  1 |                  2 |                3 
+  2 |                 20 |               10 
+  3 |                  5 |                2 
+  4 |                  5 |                3 
+  5 |                  0 |                0 
+  6 |                  0 |                0 
+  7 |                  0 |                0 
+  8 |                  0 |                0 
+  9 |                  0 |                0 
+ 10 |                  0 |                0 
+
+📊 Resumen de Asistencia por Semana:
+Semana | Asistencia General | Asistencia Especial | Total
+--------------------------------------------------------
+   1   |                 32 |                  18 |    50
+   2   |                  0 |                   0 |     0
 
 ========================================
    🎡 Sistema de Gestión de Entradas 🎟 
