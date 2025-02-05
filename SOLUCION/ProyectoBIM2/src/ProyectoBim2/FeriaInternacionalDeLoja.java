@@ -126,3 +126,105 @@ public class FeriaInternacionalDeLoja {
         System.out.println("✅ Asistencia registrada correctamente.");
     }
 }
+/***
+ * ========================================
+   🎡 Sistema de Gestión de Entradas 🎟️ 
+========================================
+1. Comprar entrada normal 🎟️
+2. Comprar entrada especial 🎫
+3. Ver estadísticas 📊
+4. Registrar asistencias 📝
+5. Salir 🚪
+Seleccione una opción: 1
+✅ Entrada normal comprada por $5
+
+========================================
+   🎡 Sistema de Gestión de Entradas 🎟️ 
+========================================
+1. Comprar entrada normal 🎟️
+2. Comprar entrada especial 🎫
+3. Ver estadísticas 📊
+4. Registrar asistencias 📝
+5. Salir 🚪
+Seleccione una opción: 1
+✅ Entrada normal comprada por $5
+
+========================================
+   🎡 Sistema de Gestión de Entradas 🎟️ 
+========================================
+1. Comprar entrada normal 🎟️
+2. Comprar entrada especial 🎫
+3. Ver estadísticas 📊
+4. Registrar asistencias 📝
+5. Salir 🚪
+Seleccione una opción: 2
+Ingrese el día de la semana (jueves, viernes, sábado): jueves
+🎟️ Entrada especial comprada por $8
+
+========================================
+   🎡 Sistema de Gestión de Entradas 🎟️ 
+========================================
+1. Comprar entrada normal 🎟️
+2. Comprar entrada especial 🎫
+3. Ver estadísticas 📊
+4. Registrar asistencias 📝
+5. Salir 🚪
+Seleccione una opción: 4
+
+========================================
+ 📝 Registro de Asistencia 
+========================================
+Ingrese el número de día de la feria (1-10): 1
+👥 Ingrese la cantidad de asistentes generales: 2
+🎭 Ingrese la asistencia a la función especial (2pm - 5pm): 1
+✅ Asistencia registrada correctamente.
+
+========================================
+   🎡 Sistema de Gestión de Entradas 🎟️ 
+========================================
+1. Comprar entrada normal 🎟️
+2. Comprar entrada especial 🎫
+3. Ver estadísticas 📊
+4. Registrar asistencias 📝
+5. Salir 🚪
+Seleccione una opción: 3
+
+========================================
+ 📊 Estadísticas de la Feria 🎡 
+========================================
+👥 Total de visitantes: 3
+🎟️ Entradas normales vendidas: 2
+🎭 Entradas especiales vendidas: 1
+💰 Ganancias totales: $18
+📅 Asistencia por día:
+Día | Asistencia General | Función Especial
+-------------------------------------------
+  1 |                  2 |                1 
+  2 |                  0 |                0 
+  3 |                  0 |                0 
+  4 |                  0 |                0 
+  5 |                  0 |                0 
+  6 |                  0 |                0 
+  7 |                  0 |                0 
+  8 |                  0 |                0 
+  9 |                  0 |                0 
+ 10 |                  0 |                0 
+
+📊 Resumen de Asistencia por Semana:
+Semana | Asistencia General | Asistencia Especial | Total
+--------------------------------------------------------
+   1   |                  2 |                  1 |     3
+   2   |                  0 |                  0 |     0
+
+========================================
+   🎡 Sistema de Gestión de Entradas 🎟️ 
+========================================
+1. Comprar entrada normal 🎟️
+2. Comprar entrada especial 🎫
+3. Ver estadísticas 📊
+4. Registrar asistencias 📝
+5. Salir 🚪
+Seleccione una opción: 5
+
+👋 Gracias por usar el sistema. ¡Hasta la próxima!
+ */
