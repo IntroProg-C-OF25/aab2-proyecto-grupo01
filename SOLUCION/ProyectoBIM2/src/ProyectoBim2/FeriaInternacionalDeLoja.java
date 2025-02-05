@@ -86,6 +86,37 @@ public class FeriaInternacionalDeLoja {
         System.out.println("🎟 Entradas normales vendidas: " + normales);
         System.out.println("🎭 Entradas especiales vendidas: " + especiales);
         System.out.println("💰 Ganancias totales: $" + ganancias);
+
+        System.out.println("\n📅 Asistencia por día:");
+        System.out.println("Día |	Generales |	Especiales");
+        System.out.println("-----------------------------");
+        for (int i = 0; i < asistenciaPorDia.length; i++) {
+            System.out.println((i + 1) + "\t" + asistenciaPorDia[i][0] + "\t\t" + asistenciaPorDia[i][1]);
+        }
+
+        int totalGeneralesSemana1 = 0;
+        int totalEspecialesSemana1 = 0;
+        int totalGeneralesSemana2 = 0;
+        int totalEspecialesSemana2 = 0;
+
+        for (int i = 0; i < 5; i++) {
+            totalGeneralesSemana1 += asistenciaPorDia[i][0];
+            totalEspecialesSemana1 += asistenciaPorDia[i][1];
+        }
+
+        for (int i = 5; i < 10; i++) {
+            totalGeneralesSemana2 += asistenciaPorDia[i][0];
+            totalEspecialesSemana2 += asistenciaPorDia[i][1];
+        }
+
+        System.out.println("\n🗓 Asistencia semanal:");
+        System.out.println("Semana 1:");
+        System.out.println("Generales | Especiales");
+        System.out.println(totalGeneralesSemana1 + "\t\t" + totalEspecialesSemana1);
+
+        System.out.println("Semana 2:");
+        System.out.println("Generales | Especiales");
+        System.out.println(totalGeneralesSemana2 + "\t\t" + totalEspecialesSemana2);
     }
 
     public static void registrarAsistencia(Scanner tcl, int[][] asistenciaPorDia) {
@@ -104,8 +135,10 @@ public class FeriaInternacionalDeLoja {
         System.out.println("✅ Asistencia registrada correctamente.");
     }
 }
+
 /***
- *========================================
+ *
+========================================
    🎡 Sistema de Gestión de Entradas 🎟 
 ========================================
 1. Comprar entrada normal 🎟
@@ -114,8 +147,8 @@ public class FeriaInternacionalDeLoja {
 4. Registrar asistencias 📝
 5. Salir 🚪
 Seleccione una opción: 1
-¿Cuántas entradas desea comprar?🤔: 2
-✅ Entradas normales compradas por $10
+¿Cuántas entradas desea comprar?🤔: 1
+✅ Entradas normales compradas por $5
 
 ========================================
    🎡 Sistema de Gestión de Entradas 🎟 
@@ -126,9 +159,9 @@ Seleccione una opción: 1
 4. Registrar asistencias 📝
 5. Salir 🚪
 Seleccione una opción: 2
-¿Cuántas entradas desea comprar?🤔: 3
+¿Cuántas entradas desea comprar?🤔: 1
 Ingrese el día de la semana (jueves, viernes, sábado): jueves
-🎟 Entradas especiales compradas por $24
+🎟 Entradas especiales compradas por $8
 
 ========================================
    🎡 Sistema de Gestión de Entradas 🎟 
@@ -140,8 +173,8 @@ Ingrese el día de la semana (jueves, viernes, sábado): jueves
 5. Salir 🚪
 Seleccione una opción: 4
 Ingrese el número de día de la feria (1-10): 1
-👥 Ingrese la cantidad de asistentes generales: 2
-🎭 Ingrese la asistencia a la función especial (2pm - 5pm): 3
+👥 Ingrese la cantidad de asistentes generales: 11
+🎭 Ingrese la asistencia a la función especial (2pm - 5pm): 1
 ✅ Asistencia registrada correctamente.
 
 ========================================
@@ -157,10 +190,32 @@ Seleccione una opción: 3
 ========================================
  📊 Estadísticas de la Feria 🎡 
 ========================================
-👥 Total de visitantes: 5
-🎟 Entradas normales vendidas: 2
-🎭 Entradas especiales vendidas: 3
-💰 Ganancias totales: $34
+👥 Total de visitantes: 2
+🎟 Entradas normales vendidas: 1
+🎭 Entradas especiales vendidas: 1
+💰 Ganancias totales: $13
+
+📅 Asistencia por día:
+Día |	Generales |	Especiales
+-----------------------------
+1	11		1
+2	0		0
+3	0		0
+4	0		0
+5	0		0
+6	0		0
+7	0		0
+8	0		0
+9	0		0
+10	0		0
+
+🗓 Asistencia semanal:
+Semana 1:
+Generales | Especiales
+11		1
+Semana 2:
+Generales | Especiales
+0		0
 
 ========================================
    🎡 Sistema de Gestión de Entradas 🎟 
